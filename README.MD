@@ -20,7 +20,7 @@ Check that the pluto.sh script generates the required data and places it in the 
 docker run --volumes-from limit512 alpine cat /logi/info.log
 ```
 
-![Alt text](./screenshots/4a_1.png "info.log")
+![Alt text](./screenshots/4a_1.png "info.log file")
 
 ```
 docker inspect --format='{{json .Config.Cmd}}' limit512

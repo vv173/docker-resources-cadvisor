@@ -4,7 +4,7 @@
 DATE=$(date +"%Y-%m-%d %H:%M:%S")
 
 # Get the amount of used memory
-USED_MEMORY=$(free -h --mega | awk '/^Mem/ {printf "%.2f%%", $3*100/$2 }')
+USED_MEMORY=$(free -m | awk '/^Mem/ {printf "%.2f%%", $3*100/$2 }')
 
 # Get the total amount of memory
 TOTAL_MEMORY=$(free -h --mega | awk '/^Mem/ {printf $2}')
