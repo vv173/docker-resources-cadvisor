@@ -9,4 +9,4 @@ RUN mkdir /logi
 
 WORKDIR /logi
 
-ENTRYPOINT ["/usr/local/bin/pluto.sh"]
+CMD ["/usr/local/bin/pluto.sh"]
